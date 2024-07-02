@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especialista</title>
+    <style>
+
+        /* ====================TELA PEQUENA==================== */
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                background-image: linear-gradient(to top, #49a09d, #5f2c82);
+                height: 100vh;
+            }
+        
+            
+            main {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            /*========== pesquisa ========= */
+            .group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 20px;
+                margin: auto;
+            }
+
+            .input {
+                width: 80%;
+                height: 50px;
+                padding-left: 3.5rem;
+                border: 2px solid transparent;
+                border-radius: 50px;
+                background-color: #f3f3f4;
+                color: #0d0c22;
+                transition: 0.3s ease;
+                font-size: 20px;
+            }
+
+            .input::placeholder {
+                color: #9e9ea7;
+            }
+
+            .input:focus,input:hover {
+                outline: none;
+                border-color: #00304966;
+                background-color: #fff;
+                box-shadow: 0 0 0 4px #0030491a;
+            }
+
+            .icon {
+                position: absolute;
+                left: 3.3rem;
+                fill: #9e9ea7;
+                width: 2rem;
+                height: 2rem;
+            }
+            /*========== pesquisa ========= */
+
+            div {    /* container da div */
+                position: relative;
+                border: 1px solid rgb(0, 0, 0);
+                height: 83px;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+
+            p {    /* texto */
+                text-align: center;
+                position: relative;
+                top: 20px;
+                right: 50px;
+                color: bisque;
+            
+            }
+            img {    /* foto */
+                width: 60px;
+                position: relative;
+                left: 7px;
+                bottom:  30px;
+                border-radius: 50px;
+                border: 5px solid #22706e;
+            }
+            .butao1{
+                background-color: #49a09d;
+                box-shadow: 0.5px 0.5px 2px black;
+                border-radius: 10px;
+                border-style: none;
+                position: relative;
+                cursor: pointer;
+                left: 190px;
+                bottom: 60px;
+                width: 90px;
+                height: 30px;
+                transition-duration: .5;
+            }
+            .butao1:active {
+                background-color: #22706e;
+                border: 2px solid white;
+            }
+        } 
+
+        /* ====================TELA MEDIA==================== */
+
+        @media screen and (min-width: 768px) and (max-width: 992px) {
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                
+                background-image: linear-gradient(to top, #49a09d, #5f2c82);
+                height: 100vh;
+            }
+        
+            main {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            /*========== pesquisa ========= */
+            .group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 50px;
+                width: 500px;
+                margin: auto;
+            }
+
+            .input {
+                width: 100%;
+                height: 60px;
+                padding-left: 3.5rem;
+                border: 2px solid transparent;
+                border-radius: 50px;
+                background-color: #f3f3f4;
+                color: #0d0c22;
+                transition: 0.3s ease;
+                font-size: 20px;
+            }
+
+            .input::placeholder {
+                color: #9e9ea7;
+            }
+
+            .input:focus,input:hover {
+                outline: none;
+                border-color: rgba(0, 48, 73, 0.4);
+                background-color: #fff;
+                box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+            }
+
+            .icon {
+                position: absolute;
+                left: 1rem;
+                fill: #9e9ea7;
+                width: 2rem;
+                height: 2rem;
+            }
+            /*========== pesquisa ========= */
+
+            div {    /* container da div */
+                height: 60px;
+                width: 600px;
+                border-radius: 5px;
+                border: 2px solid #4d4d4d;
+                margin-bottom: 15px;
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+ 
+            p {    /* texto */
+                text-align: center;
+                position: relative;
+                top: 10px;
+                right: 180px;
+                color: bisque;
+            
+            }
+            img {    /* foto */
+                width: 40px;
+                position: relative;
+                left: 6px;
+                bottom:  33px;
+                border-radius: 50px;
+                border: 5px solid #22706e;
+            }
+            .butao1{
+                background-color: #49a09d;
+                box-shadow: 0px 0px 1px 1px black;
+                border-radius: 10px;
+                border-style: none;
+                position: relative;
+                cursor: pointer;
+                left: 400px;
+                bottom: 50px;
+                width: 80px;
+                height: 30px;
+                transition-duration: .5;
+            }
+            .butao1:hover {
+                background-color: #91c9c7;
+            }
+        }
+
+        /* ====================TELA GRANDE==================== */
+
+        @media screen and (min-width: 993px) {
+            *{
+                margin: 0px;
+                padding: 0px;
+            }
+            body {
+                background-image: linear-gradient(to top, #49a09d, #5f2c82);
+                height: 100vh;
+            }
+
+            main {             
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            /*========== pesquisa ========= */
+            .group {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 50px;
+                margin: auto;
+                width: 500px;
+            }
+
+            .input {
+                width: 100%;
+                height: 50px;
+                padding-left: 3.5rem;
+                border: 2px solid transparent;
+                border-radius: 50px;
+                background-color: #f3f3f4;
+                color: #0d0c22;
+                transition: 0.3s ease;
+                font-size: 20px;
+            }
+
+            .input::placeholder {
+                color: #9e9ea7;
+            }
+
+            .input:focus,input:hover {
+                outline: none;
+                border-color: #00304966;
+                background-color: #fff;
+                box-shadow: 0 0 0 4px #0030491a;
+            }
+
+            .icon {
+                position: absolute;
+                left: 1rem;
+                fill: #9e9ea7;
+                width: 2rem;
+                height: 2rem;
+            }
+            /*========== pesquisa ========= */
+
+            div {    /* container da div */
+                position: relative;
+                box-shadow: 1px 1px 3px black;
+                height: 83px;
+                width: 600px;
+                border-radius: 5px;
+                margin-bottom: 30px;
+            }
+
+            div > p {    /* foto, texto */
+                text-align: center;
+                border-radius: 10px;
+                width: 100px;
+                position: relative;
+                top: 20px;
+                left: 100px;
+                color: bisque;
+            
+            }
+            img {    /* foto */
+                width: 60px;
+                position: relative;
+                left: 7px;
+                bottom:  30px;
+                border-radius: 50px;
+                border: 5px solid #22706e;
+            }
+            .butao1{
+                background-color: #49a09d;
+                box-shadow: 0.5px 0.5px 2px black;
+                border-radius: 10px;
+                border-style: none;
+                position: relative;
+                cursor: pointer;
+                left: 350px;
+                bottom: 60px;
+                width: 90px;
+                height: 30px;
+                transition-duration: .5;
+            }
+            .butao1:active {
+                background-color: #22706e;
+                border: 2px solid white;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <main>
+        
+        <article class="group">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
+              <g>
+                <path
+                  d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+                ></path>
+              </g>
+            </svg>
+            <input class="input" type="search" placeholder="Pesquisar" />
+        </article>
+          
+
+        <div>   
+            <p>Carlos andrade <br>Nutricionista</p>
+           <img src="imagens/medico2.jpeg" alt=""> 
+           <a href="#"><input class="butao1" type="button" value="Entrar"></a>
+        </div>
+
+        <div>
+            <p>Marina Silva <br>Fisioterapeuta</p>
+            <img src="imagens/medica1.jpeg" alt="">
+            <a href="#"><input class="butao1" type="button" value="Entrar"></a>
+        </div>
+
+        <div>
+            <p>Milena <br>Clinico Geral</p>
+            <img src="imagens/medica2.jpeg" alt="">
+            <a href="#"><input class="butao1" type="button" value="Entrar"></a>
+        </div>
+
+        <div>
+            <p>Joao <br> Ortopedista</p>
+            <img src="imagens/medico1.jpeg" alt="">
+            <a href="#"><input class="butao1" type="button" value="Entrar"></a>
+        </div>
+
+        <div>
+            <p>Nicole <br>Nutrologo</p>
+            <img src="imagens/medica3.jpeg" alt="">
+            <a href="#"><input class="butao1" type="button" value="Entrar"></a>
+        </div>
+    </main>
+
+</html>
