@@ -278,98 +278,110 @@
         /* ====================TELA GRANDE==================== */
 
         @media screen and (min-width: 992px) {
-            
+            * {
+                margin: 0px;
+                padding: 0px;
+            }
             body {
                 background-image: linear-gradient(to top, #49a09d, #5f2c82);
                 height: 100vh;
             }
             
             main {
+                
+                background-color: #ffffff3f;
+                padding: 30px;
+                border-radius: 20px;
                 display: inline-block;
                 position: relative;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 
-           }
+            }
 
             .form1{
                 box-shadow: 1px 2px 5px black;
-                width: 800px;
-                margin-top: 20px;
-                padding: 10px;
+                width: 500px;
+                margin-top: 10px;
+                padding: 5px;
                 border-radius: 5px;
                 border-style: none;
-                font-size: 20px;
+                font-size: 12px;
+                
 
             }
             .idade{
                 box-shadow: 1px 2px 5px black;
-                margin-top: 20px;
-                padding: 10px;
-                width: 388px;
+                margin-top: 10px;
+                padding: 5px;
+                width: 243px;
                 border-radius: 5px;
                 border-style: none;
-                font-size: 20px;
+                font-size: 12px;
             }
             #cpf{
-                width: 388px;
+                width: 243px;
             }
 
             #rg{
-                width: 388px;
+                width: 243px;
             }
 
             #datanasc{
-                width: 388px;
+                width: 243px;
             }
 
             #telefone{
-                width: 388px;
+                width: 243px;
             }
 
             #email{
-                width: 388px;
+                width: 243px;
             }
             #numero{
                 width: 100px;
             }
 
             #endereco{
-                width: 675px;
+                width: 387px;
             }
             #bairro{
                 width: 200px;
             }
 
             #complemento{
-                width: 578px;
+                width: 287px;
             }
             #cidade{
-                width: 388px;
+                width: 243px;
             }
 
             #estado{
-                width: 388px;
+                width: 243px;
             }
 
             #criesenha{
-                width: 388px;
+                width: 243px;
             }
 
             #confirsenha{
-                width: 388px;
+                width: 243px;
+            }
+
+            div {
+                display: flex;
+                justify-content: center;
+                position: relative;
+                top: 20px;
             }
 
             .butao{
-                background-color: #49a09d;
-                position: relative;
-                top: 20px;
-                left: 300px;
+                background-color: transparent;
                 width: 150px;
                 height: 45px;
                 border-style: none;
-                border-radius: 50px;
+                border-radius: 10px;
                 box-shadow: 1px 2px 5px black;
                 cursor: pointer;
             }
@@ -381,13 +393,13 @@
 
             select{
                 box-shadow: 1px 1px 2px #373737;
-                font-size: 15px;
-                width: 388px;
+                font-size: 12px;
+                width: 243px;
                 position: relative;
-                bottom: 35px;
-                left: 19px;
-                padding: 15px;
-                border-radius: 8px;
+                bottom: 20px;
+                left: 10px;
+                padding: 5px;
+                border-radius: 5px;
                 border-style: none;
             }
         }
@@ -419,7 +431,9 @@
             <input class="form1" type="password" name="telefone" id="criesenha" placeholder="Crie uma senha*"required>
             <input class="form1" type="password" name="confirsenha" id="confirsenha" placeholder="Confirmar senha*"required>
         </form>
-        <a href="telalogin.html"><input class="butao" type="button" value="Cadastrar"></a>
+        <div>
+            <a href="index.html"><input class="butao" type="button" value="Cadastrar"></a>
+        </div>
         
     </main>
        
